@@ -2,6 +2,7 @@
 
 /**
  * main - Entry point
+ * prints out the size of various data types using printf
  * Return: Always 0 (Success)
 */
 
