@@ -2,9 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
- * main - Entry point
- * Description: A program that assigns a random number to var n
+/**
+ * main - assign a random number to the variable n each time it is executed
+ * Description: This program assigns a random number to the variable n
  * Result: 0
 */
 
