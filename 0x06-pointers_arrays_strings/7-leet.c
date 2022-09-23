@@ -12,7 +12,7 @@ char *leet(char *s)
 
 	char src[] = "aeotlAEOTL";
 	char dest[] = "4307143071";
-	
+
 	for (i = 0; *(s + i); i++)
 	{
 		for  (j = 0; j < 10; j++)
