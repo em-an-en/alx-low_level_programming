@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * alloc_grid - creates a 2d array
@@ -19,7 +20,6 @@ int **alloc_grid(int width, int height)
 
 	if (grid == NULL)
 	{
-		free(grid);
 		return (NULL);
 	}
 
