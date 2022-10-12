@@ -2,14 +2,15 @@
 
 /**
  * array_range - creates an array range
- * @min: min value of array
- * @max: max value of array
+ * @min: first value of array
+ * @max: last value of array
  * Return: pointer to created array
  */
 int *array_range(int min, int max)
 {
 	int *array;
 	int i;
+	int size;
 
 	if (min > max)
 		return (NULL);
@@ -19,9 +20,9 @@ int *array_range(int min, int max)
 	if (array == NULL)
 		return (NULL);
 
-	for (i = min; i <= max; i++)
+	for (i = 0; i < (max - min + 1); i++)
 	{
-		array[i - min] = i;
+		array[i] = min++;
 	}
 
 	return (array);

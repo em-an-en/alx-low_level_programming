@@ -2,34 +2,31 @@
 
 /**
  * _calloc - allocates memory like calloc
- * @nmemb: number of members
- * @size: size of each member
+ * @nmemb: number of elements
+ * @size: byte size of each element
  *
  * Return: void pointer
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int filler = 0, total = 0, i = 0;
-
-	char *p;
-	void *ptr;
-
-	total = size * nmemb;
+	unsigned int i;
+	char *ptr;
+	void *p;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	ptr = malloc(size * nmemb);
+	p = malloc(size * nmemb);
 
-	if (!ptr)
+	if (p == NULL)
 		return (NULL);
 
-	p = ptr;
+	ptr = p;
 
-	for (i = 0; i < total; i++)
+	for (i = 0; i < (size * nmemb); i++)
 	{
-		p[i] = (char)filler;
+		ptr[i] = '\0';
 	}
 
-	return (ptr);
+	return (p);
 }
