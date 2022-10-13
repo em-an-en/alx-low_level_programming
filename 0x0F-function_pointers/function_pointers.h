@@ -1,4 +1,4 @@
-#ifndef FUNC_H
+fndef FUNC_H
 #define FUNC_H
 #include <stdlib.h>
 #include <stdio.h>
