@@ -12,7 +12,7 @@ int print_listformat(const listint_t *head);
 size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *temp = head, *slow = head, *fast = head;
-	int i = 0;
+	size_t i = 0;
 
 	if (head == NULL)
 		exit(98);
@@ -28,6 +28,7 @@ size_t print_listint_safe(const listint_t *head)
 
 			while (slow->next != fast->next)
 			{
+				i++;
 				slow = slow->next;
 				fast = fast->next;
 			}

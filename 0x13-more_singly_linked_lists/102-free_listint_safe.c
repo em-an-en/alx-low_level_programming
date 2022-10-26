@@ -11,7 +11,7 @@ size_t free_listint_safe(listint_t **h)
 {
 	const listint_t *temp = *h, *slow = *h, *fast = *h;
 	const listint_t *temp2;
-	int i = 0;
+	size_t i = 0;
 
 	if (*h == NULL)
 		return (0);
