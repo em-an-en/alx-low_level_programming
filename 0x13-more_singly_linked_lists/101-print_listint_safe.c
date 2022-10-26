@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdint.h>
 
-int print_listformat(const listint_t *head);
+size_t print_listformat(const listint_t *head);
 
 /**
  * print_listint_safe - prints lists with loops
@@ -57,10 +57,10 @@ size_t print_listint_safe(const listint_t *head)
  *
  * Return: no of elements in list
 */
-int print_listformat(const listint_t *head)
+size_t print_listformat(const listint_t *head)
 {
 	const listint_t *temp = head;
-	int i = 0;
+	size_t i = 0;
 
 	while (temp != NULL)
 	{
