@@ -1,6 +1,6 @@
 #include "lists.h"
 
-int free_listintsafely(listint_t **head);
+int free_listint_safely(listint_t **head);
 /**
  * free_listint_safe - free_listint_safe
  * @h: double pointer to head node
@@ -47,17 +47,17 @@ size_t free_listint_safe(listint_t **h)
 		}
 	}
 
-	free_listintsafely(h);
+	free_listint_safely(h);
 	return (i);
 }
 
 /**
- * free_listintsafely - free_listint_safe
+ * free_listint_safely - free_listint_safe
  * @head: double pointer to head node
  *
  * Return: size of list
 */
-int free_listintsafely(listint_t **head)
+int free_listint_safely(listint_t **head)
 {
 	listint_t *temp = *head;
 	int i = 0;
